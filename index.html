@@ -15,18 +15,32 @@
     <title>Etch-A-Sketch</title>
   </head>
   <body>
-    <div class="header">
-      <h1>Dex-A-Sketch</h1>
-    </div>
     <div class="outer-section">
+      <div class="header">
+        <h1>Dex-A-Sketch</h1>
+      </div>
       <div class="inner-section">
         <div class="container"></div>
       </div>
     </div>
     <div class="options">
-      <button>Color</button>
-      <button>Rainbow</button>
+      <div>
+        <input type="color" id="colorpick" value="#e66465" name="head" /><label
+          for="head"
+          >Color Pick</label
+        >
+      </div>
+      <button id="rainbow">Rainbow</button>
       <button id="clear">Clear</button>
+    </div>
+    <div class="grid-size">
+      <input
+        type="text"
+        id="myText"
+        value="Input Grid Size e.g 10"
+        pattern="^(1[6-9]|[2-9][0-9]|100)$"
+      />
+      <button onclick="run()">Try it</button>
     </div>
   </body>
 </html>

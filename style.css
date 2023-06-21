@@ -20,6 +20,7 @@ body {
 }
 
 .outer-section {
+  padding: 2rem;
   align-items: center;
   justify-content: center;
   align-self: center;
@@ -33,7 +34,9 @@ body {
   color: gold;
   -webkit-text-stroke-color: rgba(204, 176, 19, 0.268);
   -webkit-text-stroke-width: 1px;
-  text-shadow: 2px 2px 4px #000000;
+  /* text-shadow: 2px 2px 4px #000000; */
+  position: absolute;
+  top: 1.8rem;
 }
 
 .container div {
@@ -50,11 +53,14 @@ body {
 }
 
 .options {
+  gap: 20px;
   align-items: center;
   justify-content: center;
   align-self: center;
   align-content: center;
   display: flex;
+  padding: 0.6rem;
+  padding-top: 0px;
 }
 .container {
   width: 480px;
@@ -66,6 +72,18 @@ body {
   /* box-shadow: 5px 10px #888888; */
   display: flex;
   flex-wrap: wrap;
+}
+
+.colorpick {
+  visibility: shown;
+}
+
+.grid-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
 }
 
 /* shake animation  */
