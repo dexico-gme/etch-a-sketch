@@ -65,10 +65,12 @@ function rainbow() {
 document.getElementById("colorpick").addEventListener("input", colorPick);
 
 function colorPick() {
-  let newColor = document.getElementById("colorpick").value;
+  let newColor = document.getElementById("colorpick");
+  let colorDiv = document.querySelectorAll(".etchDiv");
+  console.log(newColor.value);
   colorDiv.forEach((color) => {
     color.onmouseover = () => {
-      color.style.backgroundColor = newColor;
+      color.style.backgroundColor = newColor.value;
     };
   });
 }
